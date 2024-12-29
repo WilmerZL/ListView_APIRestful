@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Categoría -->
+    <TextView
+        android:id="@+id/txtCategoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Category: "
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/imgProducto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Título del producto -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Product Title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgProducto"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoria"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price: $"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgProducto"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Short Description"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgProducto"
+        app:layout_constraintTop_toBottomOf="@id/txtPrecio"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
