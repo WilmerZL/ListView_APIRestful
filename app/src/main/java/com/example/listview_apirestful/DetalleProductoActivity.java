@@ -37,9 +37,7 @@ public class DetalleProductoActivity extends AppCompatActivity {
         // Cargar la imagen del producto usando Glide
         Glide.with(this).load(imagen).into(imgProductoDetalle);
 
-        // Configurar el botón de pagar (puedes agregar funcionalidad aquí)
-        btnPagar.setOnClickListener(v -> {
-            // Lógica para pagar (puedes implementar navegación o mostrar un mensaje)
-        });
+
+        ;
     }
 }
